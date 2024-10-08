@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSNY Embedding</title>
+  </head>
+  <body>
+    <h1>Heading 1 🏀</h1>
+    <h2>Heading 2</h2>
+
+    <div class="content">
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="top"
+        hide-tabs
+        width="80vw"
+        height="100vh"
+      >
+      </tableau-viz>
+    </div>
+
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
